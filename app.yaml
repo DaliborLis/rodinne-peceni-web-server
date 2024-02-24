@@ -1,0 +1,36 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: rodinne-peceni-web-server
+  labels:
+    app: rodinne-peceni-web-server
+spec:
+  type: NodePort
+  selector:
+    app: rodinne-peceni-web-server
+  ports:
+  - port: 8080
+    targetPort: 8080
+    name: http
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: rodinne-peceni-web-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rodinne-peceni-web-server
+  template:
+    metadata:
+      labels:
+        app: rodinne-peceni-web-server
+        version: v1
+    spec:
+      containers:
+      - name: rodinne-peceni-web-server
+        image: rodinne-peceni-web-server
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
