@@ -4,7 +4,7 @@ import './App.css';
 import Toast from 'react-bootstrap/Toast';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import Menu from './Menu';
+import Menu from './components/Menu';
 
 const ExampleToast = ({ children }) => {
   const [show, toggleShow] = useState(true);
