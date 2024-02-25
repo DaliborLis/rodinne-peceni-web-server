@@ -2,5 +2,6 @@ target
 src/main/js/rodinne-peceni/node_modules
 src/main/js/rodinne-peceni/package-lock.json
 src/main/js/rodinne-peceni/build
+src/main/js/rodinne-peceni/node
 .DS_Store
 .vscode
