@@ -5,3 +5,5 @@ src/main/js/rodinne-peceni/build
 src/main/js/rodinne-peceni/node
 .DS_Store
 .vscode
+.idea
+rodinne-peceni-web-server.iml
