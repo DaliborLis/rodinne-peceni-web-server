@@ -1,4 +1,5 @@
 import Menu from "./Menu";
+import Footer from "./Footer";
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
@@ -44,7 +45,7 @@ function App() {
                             <p><Button href="#">Detail</Button></p>
                         </Col>
                         <Col lg={4}>
-                            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
+                            <Image src="eclairs.png" width={140} height={140} roundedCircle />
                             <h2 class="fw-normal">Francouzské zákusky</h2>
 
                             <p><Button href="#">Detail</Button></p>
@@ -71,7 +72,8 @@ function App() {
                         </Col>
                     </Row>
                 </Container>
-
+                <hr />
+                <Footer />
             </main>
         </>
     );
