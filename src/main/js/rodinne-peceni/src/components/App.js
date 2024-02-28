@@ -72,7 +72,6 @@ function App() {
                         </Col>
                     </Row>
                 </Container>
-                <hr />
                 <Footer />
             </main>
         </>
