@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-function Main() {
+function Home() {
     return (
         <>
             <Container style={{ backgroundColor: "#dedede" }}>
@@ -72,4 +72,4 @@ function Main() {
 
 }
 
-export default Main;
+export default Home;

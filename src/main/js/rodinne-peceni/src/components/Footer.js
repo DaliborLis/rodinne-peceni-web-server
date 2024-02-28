@@ -5,8 +5,7 @@ function Footer() {
         <footer>
             <Container>
                 <hr />
-                <p className="float-end small"><a href="#">Nahoru</a></p>
-                <p className='small'>&copy; 2024 Rodinné pečení</p>
+                <p className='small' style={{ textAlign: "center" }}>&copy; 2024 Rodinné pečení</p>
             </Container>
         </footer>
     );
