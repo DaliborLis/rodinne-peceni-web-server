@@ -4,11 +4,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
         <>
-            <Container style={{ backgroundColor: "#dedede" }}>
+            <Container>
                 <Carousel data-bs-theme="light">
                     <Carousel.Item>
                         {/* <img
@@ -31,7 +32,7 @@ function Home() {
                     <Col lg={4}>
                         <Image src="dort.png" width={140} height={140} rounded />
                         <h2 class="fw-normal">Dorty</h2>
-                        <p><Button href="#">Detail</Button></p>
+                        <p><Button as={Link} to="dorty">Detail</Button></p>
                     </Col>
                     <Col lg={4}>
                         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
@@ -63,7 +64,7 @@ function Home() {
                         <Image src="kolace.png" width={140} height={140} roundedCircle />
                         <h2 class="fw-normal">Koláče</h2>
 
-                        <p><Button href="#">Detail</Button></p>
+                        <p><Button as={Link} to="footer">Detail</Button></p>
                     </Col>
                 </Row>
             </Container>

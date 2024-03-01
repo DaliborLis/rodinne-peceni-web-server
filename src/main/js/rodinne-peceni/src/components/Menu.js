@@ -4,19 +4,21 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import { Outlet, Link } from "react-router-dom";
+import Footer from "./Footer";
 
 function Menu() {
+
     return (
         <>
             <header>
                 <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
                     <Container>
-                        <Navbar.Brand as={Link} to="/"><Image src='vojteska.png' fluid alt='rodinne-peceni-vojteska' style={{ with: "30px", height: "30px" }} /> Rodinné pečení</Navbar.Brand>
+                        <Navbar.Brand as={Link} to="/" href='/'><Image src='vojteska.png' fluid alt='rodinne-peceni-vojteska' style={{ with: "30px", height: "30px" }} /> Rodinné pečení</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
                                 <NavDropdown title="Nabídka" id="collapsible-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">Dorty</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="dorty" href='dorty'>Dorty</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Zákusky</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Francouzské zákusky</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Chlebíčky</NavDropdown.Item>
@@ -31,6 +33,7 @@ function Menu() {
                 </Navbar>
             </header>
             <main><Outlet /></main>
+            <Footer />
         </>
     );
 }
