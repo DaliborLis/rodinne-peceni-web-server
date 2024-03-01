@@ -18,12 +18,12 @@ function Menu() {
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
                                 <NavDropdown title="Nabídka" id="collapsible-nav-dropdown">
-                                    <NavDropdown.Item as={Link} to="dorty" href='dorty'>Dorty</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.2">Zákusky</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Francouzské zákusky</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Chlebíčky</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Cukroví</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Koláče</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="dorty" href="dorty">Dorty</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="zakusky" href="zakusky">Zákusky</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="fr_zakusky" href="fr_zakusky">Francouzské zákusky</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="chlebicky" href="chlebicky">Chlebíčky</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="cukrovi" href="cukrovi">Cukroví</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="kolace" href="kolace">Koláče</NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link as={Link} to="footer" href="#pricing">O nás</Nav.Link>
                                 <Nav.Link href="#pricing">Kontakt</Nav.Link>

@@ -38,13 +38,13 @@ function Home() {
                         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
                         <h2 class="fw-normal">Zákusky</h2>
 
-                        <p><Button href="#">Detail</Button></p>
+                        <p><Button as={Link} to="zakusky">Detail</Button></p>
                     </Col>
                     <Col lg={4}>
                         <Image src="eclairs.png" width={140} height={140} roundedCircle />
                         <h2 class="fw-normal">Francouzské zákusky</h2>
 
-                        <p><Button href="#">Detail</Button></p>
+                        <p><Button as={Link} to="fr_zakusky">Detail</Button></p>
                     </Col>
                 </Row>
                 <Row className="marketing">
@@ -52,19 +52,19 @@ function Home() {
                         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
                         <h2 class="fw-normal">Chlebíčky</h2>
 
-                        <p><Button href="#">Detail</Button></p>
+                        <p><Button as={Link} to="chlebicky">Detail</Button></p>
                     </Col>
                     <Col lg={4}>
                         <Image src="cukrovi.png" width={140} height={140} roundedCircle />
                         <h2 class="fw-normal">Cukroví</h2>
 
-                        <p><Button href="#">Detail</Button></p>
+                        <p><Button as={Link} to="cukrovi">Detail</Button></p>
                     </Col>
                     <Col lg={4}>
                         <Image src="kolace.png" width={140} height={140} roundedCircle />
                         <h2 class="fw-normal">Koláče</h2>
 
-                        <p><Button as={Link} to="footer">Detail</Button></p>
+                        <p><Button as={Link} to="kolace">Detail</Button></p>
                     </Col>
                 </Row>
             </Container>
