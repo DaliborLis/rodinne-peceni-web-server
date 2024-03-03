@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image';
 import { Outlet, Link } from "react-router-dom";
 import Footer from "./Footer";
 
-function Menu() {
+function Layout() {
 
     return (
         <>
@@ -33,9 +33,9 @@ function Menu() {
                 </Navbar>
             </header>
             <main><Outlet /></main>
-            <Footer />
+            <footer><Footer /></footer>
         </>
     );
 }
 
-export default Menu;
+export default Layout;
