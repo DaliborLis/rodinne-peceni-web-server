@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Home() {
     return (
         <>
-            <Container>
+            {/* <Container> */}
                 <Carousel data-bs-theme="light">
                     <Carousel.Item>
                         {/* <img
@@ -17,16 +17,16 @@ function Home() {
                             src="ny.jpg"
                             alt="First slide"
                         /> */}
-                        <Image src="dort-gimp-backgroud.png" className="d-block w-100" />
+                        <Image src="dort-gimp-backgroud.png" className="d-block" />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Image src="dort-ovoce-gimp-backgroud.png" className="d-block w-100" />
+                        <Image src="dort-ovoce-gimp-backgroud.png" className="d-block" />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Image src="tarteletky-gimp-background.png" className="d-block w-100" />
+                        <Image src="tarteletky-gimp-background.png" className="d-block" />
                     </Carousel.Item>
                 </Carousel>
-            </Container>
+            {/* </Container> */}
             <Container>
                 <Row className="marketing">
                     <Col lg={4}>

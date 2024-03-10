@@ -12,7 +12,7 @@ function Layout() {
         <>
             <header>
                 <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-                    <Container>
+                    <Container fluid>
                         <Navbar.Brand as={Link} to="/" href='/'><Image src='vojteska.png' fluid alt='rodinne-peceni-vojteska' style={{ with: "30px", height: "30px" }} /> Rodinné pečení</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
