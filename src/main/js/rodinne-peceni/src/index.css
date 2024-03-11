@@ -32,7 +32,8 @@ code {
 .carousel-item img {
   margin-left: auto;
   margin-right: auto;
-  object-fit: cover
+  object-fit: fill;
+  max-width: 1000px ;
 }
 
 
@@ -84,6 +85,5 @@ code {
   }
   .carousel-item img {
     width: 100%;
-    object-fit: cover
   }
 }
