@@ -5,26 +5,21 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import { Outlet, Link } from "react-router-dom";
 import Footer from "./Footer";
+import { useLocation } from 'react-router-dom';
 
 function Layout() {
-
+    const location = useLocation();
+    console.log(location)
     return (
         <>
             <header>
                 <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
                     <Container>
-                        <Navbar.Brand as={Link} to="/" href='/'><Image src='vojteska.png' fluid alt='rodinne-peceni-vojteska' style={{ with: "30px", height: "30px" }} /> Rodinné pečení</Navbar.Brand>
+                        <Navbar.Brand href='/'><Image src='vojteska.png' fluid alt='rodinne-peceni-vojteska' style={{ with: "30px", height: "30px" }} /> Rodinné pečení</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
-                                <NavDropdown title="Nabídka" id="collapsible-nav-dropdown">
-                                    <NavDropdown.Item as={Link} to="dorty" href="dorty">Dorty</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="zakusky" href="zakusky">Zákusky</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="fr_zakusky" href="fr_zakusky">Francouzské zákusky</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="chlebicky" href="chlebicky">Chlebíčky</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="cukrovi" href="cukrovi">Cukroví</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="kolace" href="kolace">Koláče</NavDropdown.Item>
-                                </NavDropdown>
+                                <Nav.Link as={Link} to="/" href="/" active={location.pathname === "/"}>Nabídka</Nav.Link>
                                 <Nav.Link as={Link} to="about" href="about">O nás</Nav.Link>
                                 <Nav.Link as={Link} to="pricing" href="pricing">Ceník</Nav.Link>
                                 <Nav.Link as={Link} to="contact" href="contact">Kontakt</Nav.Link>
