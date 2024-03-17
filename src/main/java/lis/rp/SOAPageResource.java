@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * The purpose of the class is to handle UI navigation requests sent to server.
  * By default, the navigation is handled by React router navigation framework.
  */
-@Path("")
+@Path("/{a:dorty|zakusky|fr_zakusky|chlebicky|kolace|cukrovi|about|pricing|contact}")
 public class SOAPageResource {
 
     private final String soaIndex;
@@ -30,7 +30,6 @@ public class SOAPageResource {
     }
 
     @GET
-    @Path("/{a:dorty|zakusky|fr_zakusky|chlebicky|kolace|cukrovi}")
     @Produces(MediaType.TEXT_HTML)
     public Response uiNavigation() throws IOException {
         String content;

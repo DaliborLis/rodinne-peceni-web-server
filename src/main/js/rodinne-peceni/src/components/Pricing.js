@@ -1,0 +1,11 @@
+import Container from 'react-bootstrap/Container';
+
+function Pricing() {
+    return (
+        <Container>
+            <h1>Bude brzy doplněno</h1>
+        </Container>
+    );
+}
+
+export default Pricing;

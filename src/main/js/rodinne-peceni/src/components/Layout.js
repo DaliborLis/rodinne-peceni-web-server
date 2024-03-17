@@ -25,8 +25,9 @@ function Layout() {
                                     <NavDropdown.Item as={Link} to="cukrovi" href="cukrovi">Cukroví</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="kolace" href="kolace">Koláče</NavDropdown.Item>
                                 </NavDropdown>
-                                <Nav.Link as={Link} to="footer" href="#pricing">O nás</Nav.Link>
-                                <Nav.Link href="#pricing">Kontakt</Nav.Link>
+                                <Nav.Link as={Link} to="about" href="about">O nás</Nav.Link>
+                                <Nav.Link as={Link} to="pricing" href="pricing">Ceník</Nav.Link>
+                                <Nav.Link as={Link} to="contact" href="contact">Kontakt</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
