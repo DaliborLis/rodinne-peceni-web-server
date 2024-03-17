@@ -9,24 +9,22 @@ import { Link } from "react-router-dom";
 function Home() {
     return (
         <>
-            <Container>
-                <Carousel data-bs-theme="light">
-                    <Carousel.Item>
-                        {/* <img
+            <Carousel data-bs-theme="light">
+                <Carousel.Item>
+                    {/* <img
                             className="d-block w-100"
                             src="ny.jpg"
                             alt="First slide"
                         /> */}
-                        <Image src="dort-gimp-backgroud.png" className="d-block w-100" />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <Image src="dort-ovoce-gimp-backgroud.png" className="d-block w-100" />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <Image src="tarteletky-gimp-background.png" className="d-block w-100" />
-                    </Carousel.Item>
-                </Carousel>
-            </Container>
+                    <Image src="dort-gimp-backgroud.png" className="d-block w-100" />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Image src="dort-ovoce-gimp-backgroud.png" className="d-block w-100" />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Image src="tarteletky-gimp-background.png" className="d-block w-100" />
+                </Carousel.Item>
+            </Carousel>
             <Container>
                 <Row className="marketing">
                     <Col lg={4}>
