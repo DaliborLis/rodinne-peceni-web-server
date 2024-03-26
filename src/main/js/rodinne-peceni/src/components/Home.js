@@ -47,7 +47,7 @@ function Home() {
                 </Row>
                 <Row className="marketing">
                     <Col lg={4}>
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
+                        <Image src="images/chlebicky-menu-5.png" width={140} height={140} roundedCircle />
                         <h2 class="fw-normal">Chlebíčky</h2>
 
                         <p><Button as={Link} to="chlebicky">Detail</Button></p>
