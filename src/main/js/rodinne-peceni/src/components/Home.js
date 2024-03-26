@@ -16,19 +16,19 @@ function Home() {
                             src="ny.jpg"
                             alt="First slide"
                         /> */}
-                    <Image src="dort-gimp-backgroud.png" className="d-block w-100" />
+                    <Image src="images/dort-gimp-backgroud.png" className="d-block w-100" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image src="dort-ovoce-gimp-backgroud.png" className="d-block w-100" />
+                    <Image src="images/dort-ovoce-gimp-backgroud.png" className="d-block w-100" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image src="tarteletky-gimp-background.png" className="d-block w-100" />
+                    <Image src="images/tarteletky-gimp-background.png" className="d-block w-100" />
                 </Carousel.Item>
             </Carousel>
             <Container>
                 <Row className="marketing">
                     <Col lg={4}>
-                        <Image src="dort.png" width={140} height={140} rounded />
+                        <Image src="images/dort.png" width={140} height={140} rounded />
                         <h2 class="fw-normal">Dorty</h2>
                         <p><Button as={Link} to="dorty">Detail</Button></p>
                     </Col>
@@ -39,7 +39,7 @@ function Home() {
                         <p><Button as={Link} to="zakusky">Detail</Button></p>
                     </Col>
                     <Col lg={4}>
-                        <Image src="eclairs.png" width={140} height={140} roundedCircle />
+                        <Image src="images/eclairs.png" width={140} height={140} roundedCircle />
                         <h2 class="fw-normal">Francouzské zákusky</h2>
 
                         <p><Button as={Link} to="fr_zakusky">Detail</Button></p>
@@ -53,13 +53,13 @@ function Home() {
                         <p><Button as={Link} to="chlebicky">Detail</Button></p>
                     </Col>
                     <Col lg={4}>
-                        <Image src="cukrovi.png" width={140} height={140} roundedCircle />
+                        <Image src="images/cukrovi.png" width={140} height={140} roundedCircle />
                         <h2 class="fw-normal">Cukroví</h2>
 
                         <p><Button as={Link} to="cukrovi">Detail</Button></p>
                     </Col>
                     <Col lg={4}>
-                        <Image src="kolace.png" width={140} height={140} roundedCircle />
+                        <Image src="images/kolace.png" width={140} height={140} roundedCircle />
                         <h2 class="fw-normal">Koláče</h2>
 
                         <p><Button as={Link} to="kolace">Detail</Button></p>
