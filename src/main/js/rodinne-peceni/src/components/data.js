@@ -10,19 +10,19 @@ export const sections_data = {
                 ]
             },
             "Krémové": {
-                image: "images/dort.png",
+                image: "images/dort-kremovy-menu-2.png",
                 items: []
             },
             "Ovocné": {
-                image: "images/dort.png",
+                image: "images/dort-ovoce.png",
                 items: []
             },
             "Potažené": {
-                image: "images/dort.png",
+                image: "images/dort-potahovany-menu.png",
                 items: []
             },
             "S jedlým papírem": {
-                image: "images/dort.png",
+                image: "images/dort-papir-menu.png",
                 items: []
             }
         },
