@@ -9,13 +9,12 @@ function Contact() {
             <h1 className='text-center'>Kontakt</h1>
             <Row>
                 <Col>
-                    <h3>Jméno</h3>
+                    <h3>Bc. Lenka Pánková</h3>
                 </Col>
             </Row>
             <Row>
                 <Col>
                     <p>
-                        Lenka Pánková <br />
                         <span className='fw-bold'>IČO:</span> 19874359
                     </p>
                 </Col>
