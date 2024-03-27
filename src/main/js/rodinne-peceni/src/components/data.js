@@ -3,7 +3,7 @@ export const sections_data = {
         title: "Dorty",
         categories: {
             "Dětské": {
-                image: "images/dort.png",
+                image: "images/dort-detsky-menu.png",
                 items: [
                     { name: "Dort potahovaný. ", secondary: "Lesní motiv.", image: "images/dort.png" },
                     { name: "Dort ovocný. ", secondary: "Lesní ovoce.", image: "images/dort-ovoce.png" }
