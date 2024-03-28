@@ -3,26 +3,26 @@ export const sections_data = {
         title: "Dorty",
         categories: {
             "Dětské": {
-                image: "images/dort-detsky-menu.png",
+                image: "images/dort-detsky-menu-tiny.png",
                 items: [
                     { name: "Dort potahovaný. ", secondary: "Lesní motiv.", image: "images/dort.png" },
                     { name: "Dort ovocný. ", secondary: "Lesní ovoce.", image: "images/dort-ovoce.png" }
                 ]
             },
             "Krémové": {
-                image: "images/dort-kremovy-menu-2.png",
+                image: "images/dort-kremovy-menu-2-tiny.png",
                 items: []
             },
             "Ovocné": {
-                image: "images/dort-ovoce.png",
+                image: "images/dort-ovoce-menu-tiny.png",
                 items: []
             },
             "Potažené": {
-                image: "images/dort-potahovany-menu.png",
+                image: "images/dort-potahovany-menu-tiny.png",
                 items: []
             },
             "S jedlým papírem": {
-                image: "images/dort-papir-menu.png",
+                image: "images/dort-papir-menu-tiny.png",
                 items: []
             }
         },
