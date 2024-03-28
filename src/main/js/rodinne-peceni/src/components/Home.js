@@ -28,7 +28,7 @@ function Home() {
             <Container>
                 <Row className="marketing">
                     <Col lg={4}>
-                        <Image src="images/dort.png" width={140} height={140} rounded />
+                        <Image src="images/dort-tiny.png" width={140} height={140} rounded />
                         <h2 class="fw-normal">Dorty</h2>
                         <p><Button as={Link} to="dorty">Detail</Button></p>
                     </Col>
