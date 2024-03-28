@@ -1,6 +1,5 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import { Outlet, Link } from "react-router-dom";
@@ -9,7 +8,6 @@ import { useLocation } from 'react-router-dom';
 
 function Layout() {
     const location = useLocation();
-    console.log(location)
     return (
         <>
             <header>

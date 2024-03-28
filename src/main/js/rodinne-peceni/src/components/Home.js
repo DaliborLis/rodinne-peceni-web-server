@@ -11,15 +11,15 @@ function Home() {
         <>
             <Carousel data-bs-theme="light">
                 <Carousel.Item>
+                    <Image src="images/dort-ovoce-gimp-backgroud.png" className="d-block w-100" />
+                </Carousel.Item>
+                <Carousel.Item>
                     {/* <img
                             className="d-block w-100"
                             src="ny.jpg"
                             alt="First slide"
                         /> */}
                     <Image src="images/dort-gimp-backgroud.png" className="d-block w-100" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Image src="images/dort-ovoce-gimp-backgroud.png" className="d-block w-100" />
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image src="images/tarteletky-gimp-background.png" className="d-block w-100" />

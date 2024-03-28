@@ -6,7 +6,7 @@ function Contact() {
 
     return (
         <Container>
-            <h1 className='text-center'>Kontakt</h1>
+            <h1 className='display-4 text-center '>Kontakt</h1>
             <Row>
                 <Col>
                     <h3>Bc. Lenka Pánková</h3>
