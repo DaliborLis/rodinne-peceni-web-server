@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 function Pricing() {
     return (
         <Container>
-            <h1>Bude brzy doplněno</h1>
+            <h1 className='display-4'>Bude brzy doplněno</h1>
         </Container>
     );
 }
