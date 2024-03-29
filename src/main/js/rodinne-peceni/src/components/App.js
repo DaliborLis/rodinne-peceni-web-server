@@ -19,9 +19,9 @@ function App() {
                         <Route path="chlebicky" element={<Section origin="chlebicky" />} />
                         <Route path="cukrovi" element={<Section origin="cukrovi" />} />
                         <Route path="kolace" element={<Section origin="kolace" />} />
-                        <Route path="about" element={<About />} />
-                        <Route path="pricing" element={<Pricing />} />
-                        <Route path="contact" element={<Contact />} />
+                        <Route path="onas" element={<About />} />
+                        <Route path="cenik" element={<Pricing />} />
+                        <Route path="kontakt" element={<Contact />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
