@@ -26,34 +26,25 @@ export const sections_data = {
                 items: []
             }
         },
-        items: [
-            { name: "Dort potahovaný. ", secondary: "Lesní motiv.", image: "images/dort.png" },
-            { name: "Dort ovocný. ", secondary: "Lesní ovoce.", image: "images/dort-ovoce.png" }
-        ]
     },
     "zakusky": {
         title: "Zákusky",
         categories: {},
-        items: []
     },
     "fr_zakusky": {
         title: "Francouzské zákusky",
         categories: {},
-        items: []
     },
     "chlebicky": {
         title: "Chlebíčky",
         categories: {},
-        items: []
     },
     "cukrovi": {
         title: "Cukroví",
         categories: {},
-        items: []
     },
     "kolace": {
         title: "Koláče",
         categories: {},
-        items: []
     }
 };
