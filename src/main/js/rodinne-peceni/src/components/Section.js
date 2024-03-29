@@ -53,8 +53,8 @@ function Section(props) {
                     const categoryDetail = categories[stepKey];
                     return (
                         <Col lg={4}>
-                            <Image src={categoryDetail.image} width={140} height={140} rounded />
-                            <h2 class="fw-normal">{stepKey}</h2>
+                            <Image onClick={() => handleCategory(stepKey)} className="clickable" src={categoryDetail.image} width={140} height={140} rounded />
+                            <h2 className="fw-normal">{stepKey}</h2>
                             <p><Button onClick={() => handleCategory(stepKey)}>Detail</Button></p>
                         </Col>
                     );
@@ -101,8 +101,8 @@ function Section(props) {
     return (
         <Container className='marketing'>
             <h1 className="display-4">
-                <span style={{ cursor: "pointer" }} onClick={() => navigate("/")}>Nabídka</span>
-                {<span style={{ cursor: "pointer" }} onClick={() => handleCategory(null)}> - {sections_data[props.origin].title}</span>}
+                <span className="clickable" onClick={() => navigate("/")}>Nabídka</span>
+                {<span className="clickable" onClick={() => handleCategory(null)}> - {sections_data[props.origin].title}</span>}
                 {category && (<span> - {category} </span>)}
             </h1>
             {

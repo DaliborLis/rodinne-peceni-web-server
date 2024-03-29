@@ -57,6 +57,10 @@ code {
   margin-left: .75rem;
 }
 
+.marketing .clickable {
+  cursor: pointer;
+}
+
 /* rtl:end:ignore */
 
 @media (min-width: 40em) {
