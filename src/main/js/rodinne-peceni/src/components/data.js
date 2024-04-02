@@ -24,7 +24,7 @@ export const sections_data = {
                     { name: "Cheesecake. ", secondary: "Lesní jahoda.", image: "images/dorty/kremove/cheesecake_lesni_jahoda_2.jpg" },
                     { name: "Čoko ovoce ", secondary: "", image: "images/dorty/kremove/chocolate_fruit_2.jpg" },
                     { name: "Harlekýn", secondary: "", image: "images/dorty/kremove/harlekyn_1.jpg" },
-                    { name: "Hříbkový", secondary: "", image: "images/dorty/kremove/hribkovy.png" },
+                    { name: "Hříbkový", secondary: "", image: "images/dorty/kremove/hribkovy_1.jpg" },
                     { name: "Oreo", secondary: "", image: "images/dorty/kremove/oreo_1.jpg" },
                     { name: "Paříž", secondary: "", image: "images/dorty/kremove/paris_1.jpg" },
                     { name: "Pavlova", secondary: "", image: "images/dorty/kremove/pavlova_2.jpeg" },
@@ -34,7 +34,11 @@ export const sections_data = {
             },
             "Ovocné": {
                 image: "images/dort-ovoce-menu-tiny.png",
-                items: []
+                items: [
+                    { name: "Čoko ovoce ", secondary: "", image: "images/dorty/kremove/chocolate_fruit_2.jpg" },
+                    { name: "KitKat", secondary: "", image: "images/dorty/ovocne/kitkat3.jpeg" },
+                    { name: "Ovocný", secondary: "", image: "images/dorty/ovocne/ovocny_1.jpg" }
+                ]
             },
             "Potažené": {
                 image: "images/dort-potahovany-menu-tiny.png",
