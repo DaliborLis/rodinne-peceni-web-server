@@ -17,7 +17,20 @@ export const sections_data = {
             },
             "Krémové": {
                 image: "images/dort-kremovy-menu-2-tiny.png",
-                items: []
+                items: [
+                    { name: "Apple", secondary: "", image: "images/dorty/kremove/apple_1.jpg" },
+                    { name: "Bílý a čoko", secondary: "", image: "images/dorty/kremove/white_chocolate_6.jpg" },
+                    { name: "Cheesecake. ", secondary: "Borůvka.", image: "images/dorty/kremove/cheesecake_blueberry_4.jpg" },
+                    { name: "Cheesecake. ", secondary: "Lesní jahoda.", image: "images/dorty/kremove/cheesecake_lesni_jahoda_2.jpg" },
+                    { name: "Čoko ovoce ", secondary: "", image: "images/dorty/kremove/chocolate_fruit_2.jpg" },
+                    { name: "Harlekýn", secondary: "", image: "images/dorty/kremove/harlekyn_1.jpg" },
+                    { name: "Hříbkový", secondary: "", image: "images/dorty/kremove/hribkovy.png" },
+                    { name: "Oreo", secondary: "", image: "images/dorty/kremove/oreo_1.jpg" },
+                    { name: "Paříž", secondary: "", image: "images/dorty/kremove/paris_1.jpg" },
+                    { name: "Pavlova", secondary: "", image: "images/dorty/kremove/pavlova_2.jpeg" },
+                    { name: "Pistácie", secondary: "", image: "images/dorty/kremove/pistacie_1.jpg" },
+                    { name: "Podkova", secondary: "", image: "images/dorty/kremove/podkova_3.jpg" }
+                ]
             },
             "Ovocné": {
                 image: "images/dort-ovoce-menu-tiny.png",
