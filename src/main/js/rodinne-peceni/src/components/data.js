@@ -5,14 +5,14 @@ export const sections_data = {
             "Dětské": {
                 image: "images/dort-detsky-menu-tiny.png",
                 items: [
-                    { name: "Bob a Bobek ", secondary: "", image: "images/dorty/detske/Bob a bobek 1.jpg" },
-                    { name: "Jednorožec ", secondary: "", image: "images/dorty/detske/Jednorožec 1.jpg" },
-                    { name: "Krteček ", secondary: "", image: "images/dorty/detske/Krteček 1.jpg" },
-                    { name: "Máša a medvěd ", secondary: "", image: "images/dorty/detske/Máša a medvěd 1.jpg" },
-                    { name: "Medvěd ", secondary: "", image: "images/dorty/detske/Medvěd 3.jpg" },
-                    { name: "Medvídek ", secondary: "", image: "images/dorty/detske/Medvídek 1.jpg" },
-                    { name: "Pejsek ", secondary: "", image: "images/dorty/detske/Pejsek 1.jpeg" },
-                    { name: "Pikachu ", secondary: "", image: "images/dorty/detske/Pikaču 3.jpg" }
+                    { name: "Bob a Bobek ", secondary: "", image: "images/dorty/detske/bob_a_bobek_1.jpg" },
+                    { name: "Jednorožec ", secondary: "", image: "images/dorty/detske/unicorn_1.jpg" },
+                    { name: "Krteček ", secondary: "", image: "images/dorty/detske/krtecek_1.jpg" },
+                    { name: "Máša a medvěd ", secondary: "", image: "images/dorty/detske/masa_a_medved_1.jpg" },
+                    { name: "Medvěd ", secondary: "", image: "images/dorty/detske/medved_3.jpg" },
+                    { name: "Medvídek ", secondary: "", image: "images/dorty/detske/medvidek_1.jpg" },
+                    { name: "Pejsek ", secondary: "", image: "images/dorty/detske/pejsek_1.jpeg" },
+                    { name: "Pikachu ", secondary: "", image: "images/dorty/detske/pikachu_3.jpg" }
                 ]
             },
             "Krémové": {
