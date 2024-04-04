@@ -10,7 +10,7 @@ function Layout() {
     const location = useLocation();
     return (
         <>
-            <header>
+            <header style={{position: "sticky", top: "0", zIndex:"100"}}>
                 <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
                     <Container>
                         <Navbar.Brand href='/'><Image src='vojteska.png' fluid alt='rodinne-peceni-vojteska' style={{ with: "30px", height: "30px" }} /> Rodinné pečení</Navbar.Brand>
