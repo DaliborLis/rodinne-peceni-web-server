@@ -72,7 +72,14 @@ export const sections_data = {
     },
     "chlebicky": {
         title: "Chlebíčky",
-        categories: {},
+        categories: {
+            "default": {
+                items: [
+                    { name: "Chlebíčky. ", secondary: "Herkules a debrecínka.", image: "images/chlebicky/chlebicky_herkules_debrecinka_4.jpg" },
+                    { name: "Chlebíčky. ", secondary: "Šunka.", image: "images/chlebicky/chlebicky_sunka_3.jpg" }
+                ]
+            }
+        },
     },
     "cukrovi": {
         title: "Cukroví",
