@@ -42,7 +42,16 @@ export const sections_data = {
             },
             "Potažené": {
                 image: "images/dort-potahovany-menu-tiny.png",
-                items: []
+                items: [
+                    { name: "Béžový", secondary: "", image: "images/dorty/potazene/bezovy_1.jpg" },
+                    { name: "Bob a Bobek ", secondary: "", image: "images/dorty/detske/bob_a_bobek_1.jpg" },
+                    { name: "Krteček ", secondary: "", image: "images/dorty/detske/krtecek_1.jpg" },
+                    { name: "KTM ", secondary: "", image: "images/dorty/potazene/ktm_2.jpg" },
+                    { name: "Medvídek ", secondary: "", image: "images/dorty/detske/medvidek_1.jpg" },
+                    { name: "Pejsek ", secondary: "", image: "images/dorty/detske/pejsek_1.jpeg" },
+                    { name: "Pikachu ", secondary: "", image: "images/dorty/detske/pikachu_3.jpg" },
+                    { name: "Růže ", secondary: "", image: "images/dorty/potazene/ruze_2.jpg" }
+                ]
             },
             "S jedlým papírem": {
                 image: "images/dort-papir-menu-tiny.png",
