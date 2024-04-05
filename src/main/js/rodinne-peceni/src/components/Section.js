@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -15,11 +15,8 @@ function Section(props) {
 
     const handleCategory = category => {
         setCategory(category);
+        window.scrollTo(0, 0);
     };
-
-    useEffect(() => {
-        console.log("componentDidMount");
-    }, []);
 
     const renderItems = items => {
         if (items === undefined) {

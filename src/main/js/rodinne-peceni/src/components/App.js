@@ -5,11 +5,13 @@ import About from './About';
 import Pricing from "./Pricing";
 import Contact from "./Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
     return (
         <>
             <BrowserRouter>
+            <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Home />} />
