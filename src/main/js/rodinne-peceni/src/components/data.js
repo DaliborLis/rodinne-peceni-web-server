@@ -55,7 +55,10 @@ export const sections_data = {
             },
             "S jedlým papírem": {
                 image: "images/dort-papir-menu-tiny.png",
-                items: []
+                items: [
+                    { name: "Minecraft ", secondary: "", image: "images/dorty/jedly_papir/minecraft_1.jpeg" },
+                    { name: "Sima", secondary: "", image: "images/dorty/jedly_papir/sima_1.jpg" }
+                ]
             }
         },
     },
