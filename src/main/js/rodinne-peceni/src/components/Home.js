@@ -15,7 +15,7 @@ function Home() {
         <>
             <Carousel data-bs-theme="light">
                 <Carousel.Item>
-                    <Image src="images/dort-ovoce-gimp-backgroud-tiny.png" className="d-block w-100" />
+                    <Image src="images/main/dort-ovoce-gimp-backgroud-tiny.png" className="d-block w-100" />
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image src="images/main/chlebicky.png" className="d-block w-100" />
@@ -27,7 +27,7 @@ function Home() {
                     <Image src="images/main/kolace.png" className="d-block w-100" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image src="images/tarteletky-gimp-background-tiny.png" className="d-block w-100" />
+                    <Image src="images/main/tarteletky-gimp-background-tiny.png" className="d-block w-100" />
                 </Carousel.Item>
                 <Carousel.Item>
                     {/* <img
