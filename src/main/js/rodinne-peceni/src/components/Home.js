@@ -18,15 +18,24 @@ function Home() {
                     <Image src="images/dort-ovoce-gimp-backgroud-tiny.png" className="d-block w-100" />
                 </Carousel.Item>
                 <Carousel.Item>
+                    <Image src="images/main/chlebicky.png" className="d-block w-100" />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Image src="images/main/cukrovi.png" className="d-block w-100" />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Image src="images/main/kolace.png" className="d-block w-100" />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Image src="images/tarteletky-gimp-background-tiny.png" className="d-block w-100" />
+                </Carousel.Item>
+                <Carousel.Item>
                     {/* <img
                             className="d-block w-100"
                             src="ny.jpg"
                             alt="First slide"
                         /> */}
                     <Image src="images/dort-gimp-backgroud-tiny.png" className="d-block w-100" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Image src="images/tarteletky-gimp-background-tiny.png" className="d-block w-100" />
                 </Carousel.Item>
             </Carousel>
             <Container>
