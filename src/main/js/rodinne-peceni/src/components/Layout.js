@@ -13,7 +13,7 @@ function Layout() {
             <header style={{position: "sticky", top: "0", zIndex:"100"}}>
                 <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
                     <Container>
-                        <Navbar.Brand href='/'><Image src='vojteska.png' fluid alt='rodinne-peceni-vojteska' style={{ with: "30px", height: "30px" }} /> Rodinné pečení</Navbar.Brand>
+                        <Navbar.Brand href='/'><Image src='vojteska.png' fluid alt='rodinne-peceni-vojteska' style={{ with: "40px", height: "40px" }} /> <span style={{fontFamily:"fantasy", fontSize:"30px"}}>Rodinné pečení</span></Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
