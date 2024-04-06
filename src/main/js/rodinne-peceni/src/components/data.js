@@ -83,10 +83,26 @@ export const sections_data = {
     },
     "cukrovi": {
         title: "Cukroví",
-        categories: {},
+        categories: {
+            "default": {
+                items: [
+                    { name: "Vánoční. ", secondary: "Krabice mix 1 Kg.", image: "images/cukrovi/krabice_1kg.jpg" },
+                    { name: "Vánoční. ", secondary: "Krabice mix 2 Kg.", image: "images/cukrovi/krabice_2kg.jpg" },
+                    { name: "Svatební. ", secondary: "", image: "images/cukrovi/svatebni_cukrovi_2.jpg" },
+                    { name: "Velikonoční. ", secondary: "", image: "images/cukrovi/velikonocni_cukrovi_1.jpg" }
+                ]
+            }
+        },
     },
     "kolace": {
         title: "Koláče",
-        categories: {},
+        categories: {
+            "default": {
+                items: [
+                    { name: "Koláče. ", secondary: "", descriptions: ["Tvarohové", "Makové", "Povidlové", "Ořechové", "Jablkové"], image: "images/kolace/kolace_1.jpg" },
+                    { name: "Mini koláčky. ", secondary: "", descriptions: ["Tvarohové", "Makové", "Povidlové", "Ořechové", "Jablkové"], image: "images/kolace/minikolacky_1.jpg" }
+                ]
+            }
+        },
     }
 };

@@ -29,7 +29,11 @@ function Section(props) {
                     <Row key={index} className='featurette'>
                         <div className={"col-md-7" + (index % 2 === 0 ? "" : " order-md-2")}>
                             <h5 className="featurette-heading fw-normal lh-1">{item.name}<span className="text-body-secondary">{item.secondary}</span></h5>
-                            <p className="lead"></p>
+                            <p className="lead">
+                                <ul>
+                                    {item.descriptions && item.descriptions.map(d => (<li>{d}</li>))}
+                                </ul>
+                            </p>
                         </div>
                         <div className={"col-md-5" + (index % 2 === 0 ? "" : " order-md-1")}>
                             <Image className="featurette-image img-fluid mx-auto" src={item.image} width={500} height={500} />
