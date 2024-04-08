@@ -156,3 +156,8 @@ mvn package -Pjlink-image -Djlink.image.addClassDataSharingArchive=false
 
 For more information on available configuration options see the helidon-maven-plugin documentation.
                                 
+## Certbot generate certificate
+
+```
+sudo certbot certonly --manual --preferred-challenges dns -d rodinnepeceni.cz,www.rodinnepeceni.cz
+```
