@@ -161,3 +161,39 @@ For more information on available configuration options see the helidon-maven-pl
 ```
 sudo certbot certonly --manual --preferred-challenges dns -d rodinnepeceni.cz,www.rodinnepeceni.cz
 ```
+
+## nginx configuration
+
+File``/etc/nginx/conf.d/default.conf``:
+
+```
+server {
+        listen 443 ssl;
+        server_name rodinnepeceni.cz;
+
+        ssl_certificate /etc/letsencrypt/live/rodinnepeceni.cz-0001/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/rodinnepeceni.cz-0001/privkey.pem;
+
+        location / {
+            proxy_pass http://localhost:8080;  # backend URL
+            proxy_http_version 1.1;
+            proxy_set_header Connection $http_connection;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+    }
+
+    server {
+        listen 80;
+        server_name rodinnepeceni.cz;
+        return 301 https://$host$request_uri;
+    }
+
+    server {
+         server_name www.rodinnepeceni.cz;
+         return 301 $scheme://rodinnepeceni.cz$request_uri;
+    }
+
+```
