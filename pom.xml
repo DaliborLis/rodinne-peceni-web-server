@@ -145,6 +145,9 @@
                                     <filtering>true</filtering>
                                 </resource>
                             </resources>
+                            <nonFilteredFileExtensions>
+                                <nonFilteredFileExtension>ttf</nonFilteredFileExtension>
+                            </nonFilteredFileExtensions>
                         </configuration>
                     </execution>
                 </executions>

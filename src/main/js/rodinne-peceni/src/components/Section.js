@@ -101,7 +101,7 @@ function Section(props) {
 
     return (
         <Container className='marketing'>
-            <h1 className="display-4" style={{position: "sticky", top: "55px", backgroundColor: "white"}}>
+            <h1 className="display-4" style={{position: "sticky", top: "70px", backgroundColor: "white"}}>
                 <span className="clickable" onClick={() => navigate("/")}>Nabídka</span>
                 {<span className="clickable" onClick={() => handleCategory(null)}> - {sections_data[props.origin].title}</span>}
                 {category && (<span> - {category} </span>)}
