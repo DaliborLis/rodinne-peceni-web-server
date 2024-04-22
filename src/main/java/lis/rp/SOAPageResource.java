@@ -23,15 +23,18 @@ import java.util.stream.Collectors;
 public class SOAPageResource {
 
     private final String soaIndex;
+    private final SSRService ssrService;
 
     @Inject
-    public SOAPageResource(@ConfigProperty(name = "soa.index") String soaIndex) {
+    public SOAPageResource(@ConfigProperty(name = "soa.index") String soaIndex, SSRService ssrService) {
         this.soaIndex = soaIndex;
+        this.ssrService = ssrService;
     }
 
     @GET
     @Produces(MediaType.TEXT_HTML)
     public Response uiNavigation() throws IOException {
+        System.out.println(ssrService.toString());
         String content;
         try (var is = new BufferedReader(new InputStreamReader(Objects.requireNonNull(SOAPageResource.class.getClassLoader().getResourceAsStream(soaIndex)), StandardCharsets.UTF_8))) {
             content = is.lines().collect(Collectors.joining());
