@@ -9,8 +9,7 @@ import org.eclipse.microprofile.metrics.MetricRegistry;
 import jakarta.ws.rs.client.Entity;
 import jakarta.ws.rs.core.MediaType;
 
-import io.helidon.microprofile.testing.junit5.HelidonTest;
-import io.helidon.metrics.api.MetricsFactory;
+import io.helidon.microprofile.tests.junit5.HelidonTest;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterAll;
@@ -29,10 +28,7 @@ class MainTest {
     private WebTarget target;
 
 
-    @AfterAll
-    static void clear() {
-        MetricsFactory.closeAll();
-    }
+
 
 
     @Test
