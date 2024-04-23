@@ -64,7 +64,35 @@ export const sections_data = {
     },
     "zakusky": {
         title: "Zákusky",
-        categories: {},
+        categories: {
+            "default": {
+                items: [
+                    { name: "Cheesecake. ", secondary: "Dortík", image: "images/zakusky/cheesecace_dortik_3.jpg" },
+                    { name: "Cheesecake ", secondary: "", image: "images/zakusky/cheesecake_1.jpg" },
+                    { name: "Dortík. ", secondary: "Čokoládový", image: "images/zakusky/dortik_cokoladovy_1.jpg" },
+                    { name: "Dortík. ", secondary: "Kokos", image: "images/zakusky/dortik_kokos_2.jpg" },
+                    { name: "Dortík. ", secondary: "Malina", image: "images/zakusky/dortik_malina_2.jpg" },
+                    { name: "Dortík. ", secondary: "Mandle", image: "images/zakusky/dortik_mandle_1.jpg" },
+                    { name: "Harlekýn ", secondary: "", image: "images/zakusky/harlekyn_5.jpg" },
+                    { name: "Kremrole ", secondary: "", image: "images/zakusky/kremrole_2.jpg" },
+                    { name: "Pannacotta. ", secondary: "Čokoláda", image: "images/zakusky/pannacotta_cokolada_1.jpg" },
+                    { name: "Pannacotta. ", secondary: "Malina", image: "images/zakusky/pannacotta_malina_6.jpg" },
+                    { name: "Pavlova ", secondary: "", image: "images/zakusky/pavlova_1.jpg" },
+                    { name: "Řez. ", secondary: "Čoko", image: "images/zakusky/rez_coko_2.jpg" },
+                    { name: "Řez. ", secondary: "Harlekýn", image: "images/zakusky/rez_harlekyn_2.jpg" },
+                    { name: "Řez. ", secondary: "Jahoda", image: "images/zakusky/rez_jahoda_1.jpg" },
+                    { name: "Řez. ", secondary: "Mandarinka", image: "images/zakusky/rez_mandarinka_1.jpg" },
+                    { name: "Řez. ", secondary: "Míša", image: "images/zakusky/rez_misa_1.jpg" },
+                    { name: "Rolády. ", secondary: "Vanilková a mandlová", image: "images/zakusky/rolady_vanilka_mandle_3.jpg" },
+                    { name: "Věneček. ", secondary: "Čoko", image: "images/zakusky/venecek_coko_1.jpg" },
+                    { name: "Věneček. ", secondary: "Pistácie", image: "images/zakusky/venecek_pistacie_1.jpg" },
+                    { name: "Věnečky. ", secondary: "Mix", image: "images/zakusky/venecky_mix_1.jpg" },
+                    { name: "Věnečky. ", secondary: "Vanilka a cukr", image: "images/zakusky/venecky_vanilka_cukr_2.jpg" },
+                    { name: "Věnečky. ", secondary: "Vanilka a poleva", image: "images/zakusky/venecky_vanilka_poleva_1.jpg" },
+                    { name: "Větrník ", secondary: "", image: "images/zakusky/vetrnik_2.jpg" }
+                ]
+            }
+        },
     },
     "fr_zakusky": {
         title: "Francouzské zákusky",
