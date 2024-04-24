@@ -24,22 +24,20 @@ function Section(props) {
         }
         return (
             items.map((item, index) => (
-                <>
-                    <hr className="featurette-divider" />
-                    <Row key={index} className='featurette'>
-                        <div className={"col-md-7" + (index % 2 === 0 ? "" : " order-md-2")}>
-                            <h5 className="featurette-heading fw-normal lh-1">{item.name}<span className="text-body-secondary">{item.secondary}</span></h5>
-                            <p className="lead">
-                                <ul>
-                                    {item.descriptions && item.descriptions.map(d => (<li>{d}</li>))}
-                                </ul>
-                            </p>
-                        </div>
-                        <div className={"col-md-5" + (index % 2 === 0 ? "" : " order-md-1")}>
-                            <Image className="featurette-image img-fluid mx-auto" src={item.image} width={500} height={500} />
-                        </div>
-                    </Row>
-                </>
+                <Row key={index} className='featurette'>
+                    <hr className="featurette-divider" style={{ zIndex: "1" }} />
+                    <div className={"col-md-7" + (index % 2 === 0 ? "" : " order-md-2")}>
+                        <h5 className="featurette-heading fw-normal lh-1">{item.name}<span className="text-body-secondary">{item.secondary}</span></h5>
+                        <p className="lead">
+                            <ul>
+                                {item.descriptions && item.descriptions.map(d => (<li>{d}</li>))}
+                            </ul>
+                        </p>
+                    </div>
+                    <div className={"col-md-5" + (index % 2 === 0 ? "" : " order-md-1")}>
+                        <Image className="featurette-image img-fluid mx-auto" src={item.image} width={500} height={500} />
+                    </div>
+                </Row>
             ))
         );
     };
@@ -47,13 +45,14 @@ function Section(props) {
     const renderCategories = () => {
         const categories = sections_data[props.origin].categories;
         const keys = Object.keys(categories);
+        let rowIndex = 0;
         const rows = keys.reduce((accumulator, key, index) => {
             if (index % 3 === 0) { //render 3 columns per row
                 const stepKeys = keys.slice(index, index + 3);
-                const columns = stepKeys.map(stepKey => {
+                const columns = stepKeys.map((stepKey, index) => {
                     const categoryDetail = categories[stepKey];
                     return (
-                        <Col lg={4}>
+                        <Col key={index} lg={4}>
                             <Image onClick={() => handleCategory(stepKey)} className="clickable" src={categoryDetail.image} width={140} height={140} rounded />
                             <h2 className="fw-normal">{stepKey}</h2>
                             <p><Button onClick={() => handleCategory(stepKey)}>Detail</Button></p>
@@ -61,7 +60,7 @@ function Section(props) {
                     );
                 });
                 accumulator.push(
-                    <Row className="marketing" style={{ justifyContent: "center" }}>
+                    <Row key={rowIndex++} className="marketing" style={{ justifyContent: "center" }}>
                         {columns}
                     </Row>
                 );
@@ -101,7 +100,7 @@ function Section(props) {
 
     return (
         <Container className='marketing'>
-            <h1 className="display-4" style={{position: "sticky", top: "70px", backgroundColor: "white"}}>
+            <h1 className="display-4" style={{ position: "sticky", top: "70px", backgroundColor: "white", zIndex: "2" }}>
                 <span className="clickable" onClick={() => navigate("/")}>Nabídka</span>
                 {<span className="clickable" onClick={() => handleCategory(null)}> - {sections_data[props.origin].title}</span>}
                 {category && (<span> - {category} </span>)}
