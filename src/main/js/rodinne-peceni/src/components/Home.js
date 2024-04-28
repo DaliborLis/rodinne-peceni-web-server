@@ -41,12 +41,12 @@ function Home() {
             <Container>
                 <Row className="marketing">
                     <Col lg={4}>
-                        <Image className='clickable' onClick={() => navigate("dorty")}  src="images/dort-tiny.png" width={140} height={140} rounded />
+                        <Image className='clickable' onClick={() => navigate("dorty")} src="images/dort-tiny.png" width={140} height={140} rounded />
                         <h2 className="fw-normal">Dorty</h2>
                         <p><Button as={Link} to="dorty">Detail</Button></p>
                     </Col>
                     <Col lg={4}>
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
+                        <Image className='clickable' onClick={() => navigate("zakusky")} src="images/venecky_vanilka_cukr_menu.png" width={140} height={140} roundedCircle />
                         <h2 className="fw-normal">Zákusky</h2>
 
                         <p><Button as={Link} to="zakusky">Detail</Button></p>
@@ -73,7 +73,7 @@ function Home() {
                     </Col>
                     <Col lg={4}>
                         <Image onClick={() => navigate("kolace")} className="clickable" src="images/kolace-tiny.png" width={140} height={140} roundedCircle />
-                        <h2 class="fw-normal">Koláče</h2>
+                        <h2 className="fw-normal">Koláče</h2>
 
                         <p><Button as={Link} to="kolace">Detail</Button></p>
                     </Col>
