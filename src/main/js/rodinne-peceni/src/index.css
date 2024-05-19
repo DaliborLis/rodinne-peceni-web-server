@@ -25,7 +25,7 @@ code {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 30rem;
+  
   background-color: #dedede;
 }
 

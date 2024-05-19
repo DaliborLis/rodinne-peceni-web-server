@@ -95,8 +95,26 @@ export const sections_data = {
                     { name: "Větrník ", secondary: "", image: "images/zakusky/vetrnik_2.jpg" },
                     { name: "Tartaletka. ", secondary: "Borůvka", image: "images/zakusky/tartaletka_boruvka_2.jpg" },
                     { name: "Tartaletka. ", secondary: "Čokoláda", image: "images/zakusky/tartaletka_cokolada_1.jpg" },
-                    { name: "Tartaletka. ", secondary: "Malina", image: "images/zakusky/tartaletka_malina_3.jpg" }
-                ]
+                    { name: "Tartaletka. ", secondary: "Malina", image: "images/zakusky/tartaletka_malina_3.jpg" },
+                    { name: "Větrník ", secondary: "", image: "images/zakusky/vetrnik_2.jpg" }
+                ],
+                gallery: {
+                    title: "Mix zákusků",
+                    items: [
+                        {
+                            image: "images/zakusky/gallery/mix_1_edit.jpg"
+                        },
+                        {
+                            image: "images/zakusky/gallery/mix_2.png"
+                        },
+                        {
+                            image: "images/zakusky/gallery/mix_4.png"
+                        },
+                        {
+                            image: "images/zakusky/gallery/mix_1_venecek_tartaletka.jpg"
+                        }
+                    ]
+                }
             }
         },
     },

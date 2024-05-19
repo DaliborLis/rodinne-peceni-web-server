@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
+import Carousel from 'react-bootstrap/Carousel';
 import { sections_data } from "./data.js";
 import { useNavigate } from 'react-router-dom';
 
@@ -18,29 +19,40 @@ function Section(props) {
         window.scrollTo(0, 0);
     };
 
-    const renderItems = items => {
+    const renderItems = (items, gallery) => {
         if (items === undefined) {
             return null;
         }
-        return (
-            items.map((item, index) => (
-                <div key={index}>
+
+        let rows = items.map((item, index) => (
+            <div key={index}>
+                <hr className="featurette-divider" style={{ zIndex: "1" }} />
+                <Row className='featurette'>
+                    <div className={"col-md-7" + (index % 2 === 0 ? "" : " order-md-2")}>
+                        <h5 className="featurette-heading fw-normal lh-1">{item.name}<span className="text-body-secondary">{item.secondary}</span></h5>
+                        <p className="lead">
+                            <ul>
+                                {item.descriptions && item.descriptions.map(d => (<li>{d}</li>))}
+                            </ul>
+                        </p>
+                    </div>
+                    <div className={"col-md-5" + (index % 2 === 0 ? "" : " order-md-1")}>
+                        <Image className="featurette-image img-fluid mx-auto" src={item.image} width={500} height={500} />
+                    </div>
+                </Row>
+            </div>
+        ));
+
+        if (gallery) {
+            rows.push(
+                <div>
                     <hr className="featurette-divider" style={{ zIndex: "1" }} />
-                    <Row className='featurette'>
-                        <div className={"col-md-7" + (index % 2 === 0 ? "" : " order-md-2")}>
-                            <h5 className="featurette-heading fw-normal lh-1">{item.name}<span className="text-body-secondary">{item.secondary}</span></h5>
-                            <p className="lead">
-                                <ul>
-                                    {item.descriptions && item.descriptions.map(d => (<li>{d}</li>))}
-                                </ul>
-                            </p>
-                        </div>
-                        <div className={"col-md-5" + (index % 2 === 0 ? "" : " order-md-1")}>
-                            <Image className="featurette-image img-fluid mx-auto" src={item.image} width={500} height={500} />
-                        </div>
-                    </Row>
-                </div>
-            ))
+                    {renderGallery(gallery)}
+                </div>);
+        }
+
+        return (
+            rows
         );
     };
 
@@ -81,23 +93,41 @@ function Section(props) {
         if (Object.keys(sections_data[props.origin].categories).length > 1) {
             if (category !== null) { // render items for selected category
                 const items = sections_data[props.origin].categories[category].items;
+                const gallery = sections_data[props.origin].categories[category].gallery;
                 return (
-                    renderItems(items)
+                    renderItems(items, gallery)
                 );
             } else { // render categories
                 return (
                     renderCategories()
                 );
             }
-        } else if (Object.keys(sections_data[props.origin].categories).length === 1) { // only one category exists, render category items
+        } else if (Object.keys(sections_data[props.origin].categories).length === 1) { // only one category exists, render items
             const firstKey = Object.keys(sections_data[props.origin].categories)[0];
             const items = sections_data[props.origin].categories[firstKey].items;
+            const gallery = sections_data[props.origin].categories[firstKey].gallery;
             return (
-                renderItems(items)
+                renderItems(items, gallery)
             );
         } else { // no categories - no items - render nothing
             return null;
         }
+    };
+
+    const renderGallery = gallery => {
+        const galleryItems = gallery.items.map((item, index) => (
+            <Carousel.Item key={index}>
+                <Image src={item.image} className="d-block w-100" style={{ maxWidth: "400px" }} width={400} height={540} />
+            </Carousel.Item>
+        ));
+        return (
+            <>
+                <h1 className="display-4">{gallery.title}</h1>
+                <Carousel data-bs-theme="light">
+                    {galleryItems}
+                </Carousel>
+            </>
+        );
     };
 
     return (
