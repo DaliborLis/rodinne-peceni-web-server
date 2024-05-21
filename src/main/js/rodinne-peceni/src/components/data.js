@@ -96,7 +96,27 @@ export const sections_data = {
     },
     "fr_zakusky": {
         title: "Francouzské zákusky",
-        categories: {},
+        categories: {
+            "default": {
+                items: [
+                    { name: "Srdce. ", secondary: "Jahoda a čokoláda", image: "images/fr_zakusky/srdce_jahoda_cokolada_4.jpg" },
+                    { name: "Borůvkové srdce", secondary: "", image: "images/fr_zakusky/boruvkove_srdce_3.jpg" },
+                    { name: "Srdce. ", secondary: "Vanilka", image: "images/fr_zakusky/vanilka_srdce_2.jpg" },
+                    { name: "Citrónové dortíky", secondary: "", image: "images/fr_zakusky/citronove_dortiky_3.jpg" },
+                    { name: "Čoko dortík", secondary: "", image: "images/fr_zakusky/cokodortik_1.jpg" },
+                    { name: "Dárková krabička", secondary: "", image: "images/fr_zakusky/darkova_krabicka_1.jpg" },
+                    { name: "Dárková krabička. ", secondary: "Srdce", image: "images/fr_zakusky/darkova_krabicka_2.jpg" },
+                    { name: "Dárková krabička. ", secondary: "Mix", image: "images/fr_zakusky/darkova_krabicka_4.jpg" },
+                    { name: "Eclairs. ", secondary: "Káva", image: "images/fr_zakusky/kavove_eclairs_1.jpg" },
+                    { name: "Eclairs. ", secondary: "Malina", image: "images/fr_zakusky/malinove_eclairs_1.jpg" },
+                    { name: "Čoko koule", secondary: "", image: "images/fr_zakusky/cokokoule_3.jpg" },
+                    { name: "Kokosové koule", secondary: "", image: "images/fr_zakusky/kokosove_koule_1.jpg" },
+                    { name: "Kokosové koule. ", secondary: "Růžový kokos", image: "images/fr_zakusky/kokosove_koule_ruzovy_kokos_4.jpg" },
+                    { name: "Vanilka a borůvka", secondary: "", image: "images/fr_zakusky/vanilka_boruvka_1.jpg" },
+                    { name: "Vanilka a jahoda", secondary: "", image: "images/fr_zakusky/vanilka_jahoda_2.jpg" }
+                ]
+            }
+        },
     },
     "chlebicky": {
         title: "Chlebíčky",
