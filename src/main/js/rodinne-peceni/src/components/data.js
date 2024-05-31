@@ -138,7 +138,36 @@ export const sections_data = {
                     { name: "Kokosové koule. ", secondary: "Růžový kokos", image: "images/fr_zakusky/kokosove_koule_ruzovy_kokos_4.jpg" },
                     { name: "Vanilka a borůvka", secondary: "", image: "images/fr_zakusky/vanilka_boruvka_1.jpg" },
                     { name: "Vanilka a jahoda", secondary: "", image: "images/fr_zakusky/vanilka_jahoda_2.jpg" }
-                ]
+                ],
+                gallery: {
+                    title: "Mix zákusků",
+                    items: [
+                        {
+                            image: "images/fr_zakusky/gallery/mix_1.jpg"
+                        },
+                        {
+                            image: "images/fr_zakusky/gallery/mix_2.jpg"
+                        },
+                        {
+                            image: "images/fr_zakusky/gallery/mix_3.jpg"
+                        },
+                        {
+                            image: "images/fr_zakusky/gallery/mix_4.jpg"
+                        },
+                        {
+                            image: "images/fr_zakusky/gallery/mix_5.jpg"
+                        },
+                        {
+                            image: "images/fr_zakusky/gallery/mix_6.jpg"
+                        },
+                        {
+                            image: "images/fr_zakusky/gallery/mix_7.jpg"
+                        },
+                        {
+                            image: "images/fr_zakusky/gallery/mix_8.jpg"
+                        }
+                    ]
+                }
             }
         },
     },
