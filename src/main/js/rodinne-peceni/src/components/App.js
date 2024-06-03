@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import Home from "./Home";
 import Layout from "./Layout";
 import Section from "./Section";
@@ -8,10 +9,27 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 
 function App() {
+
+    useEffect(() => {
+        fetch("/navstevnost/increment")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(data => {
+            //    console.log('Success:', data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }, []);
+
     return (
         <>
             <BrowserRouter>
-            <ScrollToTop />
+                <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Home />} />
