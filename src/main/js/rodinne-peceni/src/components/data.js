@@ -95,8 +95,7 @@ export const sections_data = {
                     { name: "Větrník ", secondary: "", image: "images/zakusky/vetrnik_2.jpg" },
                     { name: "Tartaletka. ", secondary: "Borůvka", image: "images/zakusky/tartaletka_boruvka_2.jpg" },
                     { name: "Tartaletka. ", secondary: "Čokoláda", image: "images/zakusky/tartaletka_cokolada_1.jpg" },
-                    { name: "Tartaletka. ", secondary: "Malina", image: "images/zakusky/tartaletka_malina_3.jpg" },
-                    { name: "Větrník ", secondary: "", image: "images/zakusky/vetrnik_2.jpg" }
+                    { name: "Tartaletka. ", secondary: "Malina", image: "images/zakusky/tartaletka_malina_3.jpg" }
                 ],
                 gallery: {
                     title: "Mix zákusků",
