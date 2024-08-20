@@ -147,6 +147,7 @@
                             </resources>
                             <nonFilteredFileExtensions>
                                 <nonFilteredFileExtension>ttf</nonFilteredFileExtension>
+                                <nonFilteredFileExtension>pdf</nonFilteredFileExtension>
                             </nonFilteredFileExtensions>
                         </configuration>
                     </execution>
