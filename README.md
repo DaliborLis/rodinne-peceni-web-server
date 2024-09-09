@@ -166,6 +166,8 @@ sudo certbot certonly --manual --preferred-challenges dns -d rodinnepeceni.cz,ww
 dig TXT _acme-challenge.rodinnepeceni.cz
 dig TXT _acme-challenge.www.rodinnepeceni.cz
 # When the records contain the new verification challenge values, press enter in the terminal window to finish the DNS verification challenge
+# Finally restart the nginx server to load the new certificates
+sudo service nginx restart
 ```
 
 ## nginx configuration
