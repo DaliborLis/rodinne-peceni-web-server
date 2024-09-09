@@ -158,8 +158,14 @@ For more information on available configuration options see the helidon-maven-pl
                                 
 ## Certbot generate certificate
 
-```
+```bash
 sudo certbot certonly --manual --preferred-challenges dns -d rodinnepeceni.cz,www.rodinnepeceni.cz
+# Press ENTER to see the both challenge values for the both domains
+# Update the DNS TXT records for _acme-challenge and _acme-challenge.www by the new values and reload the DNS configuration
+# Check whether the DNS records are already in place:
+dig TXT _acme-challenge.rodinnepeceni.cz
+dig TXT _acme-challenge.www.rodinnepeceni.cz
+# When the records contain the new verification challenge values, press enter in the terminal window to finish the DNS verification challenge
 ```
 
 ## nginx configuration
