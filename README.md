@@ -1,6 +1,6 @@
 # rodinne-peceni-web-server
 
-Helidon MP project of rodinnepeceni.cz
+Helidon MP project of https://rodinnepeceni.cz
 
 ## Build and run
 
